@@ -1,0 +1,14 @@
+node_modules/
+logs/
+.idea/
+target/
+tmp/
+config/secrets.json
+decoded-pdf.pdf
+raw-pdf.pdf
+base64-pdf.txt
+npm-debug.log
+set-offline
+newrelic_agent.log
+coverage
+npm-shrinkwrap.json

@@ -1,0 +1,13 @@
+{
+    "restartOnUncaughtException": true,
+    "restartTimeout": 30000,
+    "envType": "production",
+    "proxyServer": null,
+    "services": {
+        "missingMoney": {
+            "enabled": true,
+            "url": "https://www.missingmoney.com/API/",
+            "apiKey" : "THIS SHOULD BE IN YOUR secrets.json file"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "server": {
+        "name": "BenefitAssist",
+        "host": "benefitassist.intuit.com",
+        "port": 3000,
+        "allowOrigin": "*.intuit.com"
+    },
+
+    "restartOnUncaughtException": true,
+    "restartTimeout": 5000,
+    "envType": "preproduction",
+    "requestTimeout": 15000,
+    "proxyServer": null,
+    "services": {
+        "missingMoney": {
+            "_comment_": "API for Missing Money unclaimed funds",
+            "enabled": true,
+            "url": "http://mm.cfwebtools.com/API/",
+            "apiKey" : "THIS SHOULD BE IN YOUR secrets.json file"
+        }
+    }
+}

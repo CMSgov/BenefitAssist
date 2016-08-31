@@ -1,0 +1,10 @@
+{
+    "server": {
+        "host": "local.ba.intuit.com",
+        "allowOrigin": "*"
+    },
+    "envType": "development",
+    "restartOnUncaughtException": true,
+    "restartTimeout": 0,
+    "proxyServer": null
+}
