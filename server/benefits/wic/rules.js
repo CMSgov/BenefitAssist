@@ -29,7 +29,7 @@ var baseRules = {
 
     "pregnant" : {
         "name" : "Pregnant",
-        "desc" : "Tax payer is insured",
+        "desc" : "Pregnant or has a child recently",
         "benefit" : "wic",
         "condition" : function (RE) {
             RE.when(!( this.pregnantMember || this.recentBabyMember || this.breastfeedingMember || this.childMember));

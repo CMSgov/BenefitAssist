@@ -18,7 +18,7 @@ var snap_limits = {
         "ME" : 1.85,
         "MI" : 1.85,
         "MN" : 1.65,
-        "NC" : 1.0, // HACK for NC because they can't stand us sending traffic (should be 1.3)
+        "NC" : 1.3,
         "NJ" : 1.85,
         "OR" : 1.85,
         "RI" : 1.85,
