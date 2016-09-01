@@ -8,7 +8,7 @@
         "test": "NODE_ENV=test grunt test:ci && NODE_ENV=test grunt coverage",
         "build-production": "grunt release"
     },
-    "repository": "https://github.intuit.com/BenefitAssist/Whitehouse.git",
+    "repository": "https://github.com/CMSgov/BenefitAssist.git",
     "author": "Greg Miller",
     "license": "BSD",
     "dependencies": {
