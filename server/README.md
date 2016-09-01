@@ -6,7 +6,7 @@ Benefit Assist Application server utilizes the Node.js technology. Here's how an
 ## Getting Started
 Confirm you have the necessary components on your computer
 
-* Node.js (v10) and npm  
+* Node.js (v10 or greater) and npm  
     * https://nodejs.org/en/
 * Install Grunt client globally  
     * sudo npm install -g grunt-cli 
