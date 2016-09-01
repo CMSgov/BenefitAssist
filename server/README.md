@@ -3,6 +3,7 @@ Benefit Assist server
 
 Benefit Assist Application server utilizes the Node.js technology. Here's how and what all is needed to run Node server locally.
 
+
 ## Getting Started
 Confirm you have the necessary components on your computer
 
@@ -16,6 +17,7 @@ Confirm you have the necessary components on your computer
     * cd server
     * npm install
 
+
 ## Running Code:
 * Start the node server. Should start node running on port 3000.
     * cd server
@@ -28,6 +30,14 @@ Confirm you have the necessary components on your computer
           "lastMonthTotalIncome" : 500
       }' "http://localhost:3000/benefits/search"
 
+
+## Running Tests:
+* Unit tests are written using Mocha. From the /server directory
+    * JS Hint: grunt jshint
+    * Unit tests: grunt test
+    * Code coverage: grunt coverage
+    
+    
 ## SourceTree Setup - optional (visual git interface for the command line impared):
 * Sign up for an github account if you don't have one.
 * Install SourceTree - https://www.sourcetreeapp.com/
@@ -35,12 +45,14 @@ Confirm you have the necessary components on your computer
 * Select New Repository -> clone from url. Enter https://github.com/CMSgov/BenefitAssist.git. Click OK
 
 
-## Webstorm IDE Setup:
-* Install WebStorm and Open the Project (E.g. BenefitAssist/server)
-* Go to Run / Debug configuration
+## Webstorm (or IntelliJ) IDE Setup - optional (Best IDE for debugging Node.js code):
+* Install WebStorm. https://www.jetbrains.com/webstorm/
+* Open a Project. File -> Open -> /path/to/project on your computer
+* Go to Run -> Edit Configurations
 * Click on plus sign to add new configuration. Select Node.js
-* Give any name in ‘Name’ tab
+* Give any name (like 'Node Server') in ‘Name’ tab
 * Select working directory : /path/to/server directory
 * Select JavaScript file : app.js
 * Accept other default values and click OK.
+* Start the debugger.  Run -> Debug -> <'Node Server' or whatever name you gave the configuration>
 

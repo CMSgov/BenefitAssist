@@ -92,7 +92,7 @@ describe('SNAP Config - getFPLLimit', function () {
     // 1.0
     it('FPL - NC', function () {
         var fpl = config.getFPLLimit("NC");
-        expect(fpl).to.equal(1);
+        expect(fpl).to.equal(1.3);
     });
 
 
