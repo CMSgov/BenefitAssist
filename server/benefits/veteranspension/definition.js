@@ -5,7 +5,6 @@ module.exports = {
 };
 
 var Defs = {
-    order : 4,
     name : 'Veteran Pension',
     desc : 'VA helps Veterans and their families with financial challenges by providing supplemental income through the Veteran Pension.',
     qualifyText : 'You may be eligible for veteran pension.',

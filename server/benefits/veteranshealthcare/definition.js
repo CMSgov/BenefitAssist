@@ -5,7 +5,6 @@ module.exports = {
 };
 
 var Defs = {
-    order : 5,
     name : 'Veteran Health Care',
     desc : 'If you served in the active military, naval or air service and are separated under any condition other than dishonorable discharge, you may qualify for VA health care benefits.',
     qualifyText : 'You may be eligible for veteran health care.',

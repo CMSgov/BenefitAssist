@@ -16,7 +16,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 8,
         name : 'Unclaimed Money',
         desc : function (model) {
             return stateCode.toStateName(model.get('state')) + ' requires financial institutions and insurance companies to report and turn over unclaimed property to the state.';

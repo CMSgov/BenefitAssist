@@ -5,7 +5,6 @@ module.exports = {
 };
 
 var baseDef = {
-    order : 12,
     name : 'Medicaid',
     desc : 'A public health insurance program which provides health care services.',
     sponsor : 'U.S. Department of Health & Human Services',

@@ -13,10 +13,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 3,
-        notifications : {
-            transactional : true
-        },
         name : 'Phone Service Assistance',
         desc : 'The Lifeline program provides discounted phone service to qualifying low-income households.',
         qualifyText : 'You may qualify for a free cell phone and free service.',

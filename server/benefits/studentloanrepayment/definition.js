@@ -14,7 +14,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 13,
         name : 'Student Loan Repayment',
         desc : 'The U.S. Department of Education&rsquo;s federal student loan repayment plans may help you lower your monthly payments.',
         qualifyText : 'You may qualify to make your federal student loan payment more affordable with a new payment plan.',

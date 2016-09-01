@@ -6,7 +6,6 @@ module.exports = {
 };
 
 var baseDef = {
-    order : 10,
     name : 'Women, Infants, & Children (WIC)',
     desc : 'Low-income, pregnant, postpartum women, and children under the age of 5 can receive supplemental foods and more.',
     qualifyText : 'You may qualify for free healthy foods for your family.',

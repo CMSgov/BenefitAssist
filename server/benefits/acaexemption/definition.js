@@ -5,7 +5,6 @@ module.exports = {
 };
 
 var Defs = {
-        order : 1,
         name : 'Health Care Exemption',
         desc : 'Expecting a health care penalty? You may qualify to have it waived.',
         qualifyText : 'Expecting a health care penalty? You may qualify to have it waived.',

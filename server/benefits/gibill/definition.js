@@ -5,7 +5,6 @@ module.exports = {
 };
 
 var Defs = {
-    order: 6,
     name : 'Military GI Bill',
     desc : 'Transfer all or some post-9/11 GI Bill benefits to your spouse or dependent children.',
     qualifyText : 'Transfer all or some post-9/11 GI Bill benefits to your spouse or dependent children.',

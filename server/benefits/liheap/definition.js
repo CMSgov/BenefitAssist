@@ -17,7 +17,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 7,
         name : 'Low Cost Heating and Cooling',
         desc : 'LIHEAP provides help in paying for your home heating and cooling bill.',
         qualifyText : 'You may qualify for a discount on your monthly gas and electric bill.',

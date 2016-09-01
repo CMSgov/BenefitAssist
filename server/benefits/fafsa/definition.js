@@ -14,7 +14,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 9,
         name : 'Student Aid',
         desc : "You may qualify for federal student aid. Get a free downloadable fact sheet with everything from your tax return you'll need to apply.",
         sponsor : 'U.S. Department of Education',

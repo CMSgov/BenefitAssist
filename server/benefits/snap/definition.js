@@ -16,7 +16,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        order : 2,
         name : 'SNAP (Food Stamps)',
         desc : 'SNAP assists low-income households in purchasing the food they need to maintain adequate nutritional levels.',
         savingsLabel : function (model, searchResults) {

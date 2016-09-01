@@ -13,7 +13,6 @@ module.exports = {
 
 var Defs = {
     "*" : {
-        oredr: 14,
         name : 'Low Cost Auto Insurance',
         desc : 'The Low-Cost Automobile Insurance Program allows you to pay a reduced car insurance premium year-round if you have a good driving record.',
         qualifyText : 'You may qualify for a discount off your car insurance bill.',
