@@ -13,6 +13,9 @@ module.exports = {
          *
          * @params
          *      : type < info | warn | error >
+         *
+         * @post
+         *      json object that contains any/all information to be logged
          */
         server.post('/log/:type', function (req, resp, next) {
             var type = req.params.type;
