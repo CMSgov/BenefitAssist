@@ -2,7 +2,7 @@ Benefit Assist server
 =====================
 
 Benefit Assist Application server utilizes the Node.js technology. Here's how and what all is needed to run Node server locally.
-
+Here's a link to the demo:  http://benefitassist.info
 
 ## Getting Started
 Confirm you have the necessary components on your computer
