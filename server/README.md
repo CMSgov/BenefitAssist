@@ -1,7 +1,23 @@
 Benefit Assist server
 =====================
 
-Benefit Assist Application server utilizes the Node.js technology. Here's how and what all is needed to run Node server locally.
+Benefit Assist is an open source project originally developed by Intuit and donated to the 
+Department of Health and Human services. 
+
+The service, built in Node.js, uses a rules based engine to determine the eligibility of an applicant based on a few pieces of input data.
+Currently, the service supports determining the eligibility for the following benefits:
+* SNAP (food stamps)
+ * LIHEAP (discounted or low cost energy)
+ * Lifeline (discounted or low cost phone)
+ * Medicaid
+ * Medicare
+ * WIC
+ * Veterans pension
+ * Veterans health care
+
+
+You can see a running demo @ http://benefitassist.info
+
 
 
 ## Getting Started
