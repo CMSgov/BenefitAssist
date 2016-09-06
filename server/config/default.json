@@ -3,11 +3,12 @@
         "name": "BenefitAssist",
         "host": "benefitassist.intuit.com",
         "port": 3000,
-        "allowOrigin": "*.intuit.com"
+        "allowOrigin": "*.intuit.com",
+        "authorizationEnabled" : false
     },
 
-    "restartOnUncaughtException": true,
-    "restartTimeout": 5000,
+    "killProcessOnUncaughtException": true,
+    "killTimeout": 5000,
     "envType": "preproduction",
     "requestTimeout": 15000,
     "proxyServer": null,

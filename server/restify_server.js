@@ -44,22 +44,22 @@ RestifyServer.prototype = {
         restify.CORS.ALLOW_HEADERS.push('x-requested-with');
         restify.CORS.ALLOW_HEADERS.push('accept');
         this.server
-            .use(requestLogger)
-            .use(restify.CORS())
+            .use(requestLogger)     // log all requests
+            .use(restify.CORS())    // enable cross domain handling
+            .use(noCache)           // don't cache requests
             .use(restify.fullResponse())
-            .use(noCache)
             .use(restify.bodyParser({
                 mapParams : false   // Query string parameters will not be in body parser, but in query string parser
             }))
             .use(restify.queryParser())
             .use(require('compression')())
             .use(require('cookie-parser')())
-            .use(cors)
-            .use(testCheck);
+            .use(cors)              // enable CORS for domains specified in our settings
+            .use(testCheck);        // check all requests for the test flag
 
 
 
-        Router.init(this.server);
+        Router.init(this.server);  // Initialize all our RESTFul APIs
 
         this.server.listen(port, function () {
             logger.info('Starting Restify HTTP server ' + self.name + ' running on port ' + port);

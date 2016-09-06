@@ -2,6 +2,7 @@
 
 var Constants = require('../config/constants');
 var fs = require('fs');
+var _ = require('lodash');
 
 var Loggers = {};
 
@@ -36,9 +37,24 @@ module.exports = {
 function YourLogger (component) {
     this.component = component || Constants.applicationName;
 
-    this.info = function (msg) {console.info('%s: %s', this.component, msg)};
-    this.warn = function (msg) {console.warn('%s: %s', this.component, msg)};
-    this.error = function (msg) {console.error('%s: %s', this.component, msg)};
-    this.fatal = function (msg) {console.error('FATAL %s: %s', this.component, msg)};
+    this.info = function (msg) {
+        console.info('%s: %s', this.component, _prettyprint(msg))
+    };
+    this.warn = function (msg) {
+        console.warn('%s: %s', this.component, _prettyprint(msg))
+    };
+    this.error = function (msg) {
+        console.error('%s: %s', this.component, _prettyprint(msg))
+    };
+    this.fatal = function (msg) {
+        console.error('FATAL %s: %s', this.component, _prettyprint(msg))
+    };
+
+    function _prettyprint (msg) {
+        if (_.isObject(msg) || _.isArray(msg)) {
+            return JSON.stringify(msg, null, 2);
+        }
+        return msg;
+    }
 }
 

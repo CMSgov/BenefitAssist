@@ -1,7 +1,7 @@
 /**
  * Created by npatwardhan on 6/23/15.
  */
-var logger = require('../logging/logger.js').getLogger();
+var logger = require('../logging/logger.js').getLogger("UI");
 var jSend = require("../util/jsend");
 
 module.exports = {

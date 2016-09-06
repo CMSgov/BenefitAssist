@@ -1,11 +1,12 @@
 'use strict';
 
-var logger = require('../logging/logger').getLogger();
+var logger = require('../logging/logger').getLogger("Middleware");
+
 /*
  * Middleware to log all the requests
  *
  */
-var requestLogger = function (req, res, next) {
+module.exports = function (req, res, next) {
     var start = new Date();
     var end = res.end;
     res.end = function (chunk, encoding) {
@@ -19,9 +20,8 @@ var requestLogger = function (req, res, next) {
             responseTime : responseTime,
             contentLength : isNaN(contentLength) ? 0 : contentLength
         };
-        logger.info(data, "Middleware");
+        logger.info(data);
     };
     next();
 };
 
-module.exports = requestLogger;

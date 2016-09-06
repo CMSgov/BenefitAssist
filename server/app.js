@@ -19,7 +19,8 @@ var Server = require('./restify_server'),
 
 
 //===================================================
-// add the request extension to dynamically add the proxy settings
+// add the request extension to enable logging for external requests and
+// dynamically add the proxy settings if specified
 //===================================================
 require('./util/requestExtension');
 
@@ -33,7 +34,7 @@ webserver.start(process.env.PORT || Settings.server.port);
 
 
 //===================================================
-// Exeption handling with graceful shutdown
+// Exception handling with graceful shutdown
 //===================================================
 EventEmitter.on(Constants.events.applicationCrash, function (err) {
     gracefulShutdown();
@@ -46,7 +47,7 @@ webserver.on('uncaughtException', function (req, res, route, err) {
         method : req.method,
         msg : err.message,
         stack : err.stack
-    }, "Middleware");
+    });
     res.writeHead(500);
     res.end(err.message);
     gracefulShutdown();
@@ -75,7 +76,8 @@ process.on('SIGINT', function () {
 function gracefulShutdown () {
 
     // Just return without killing the process if we should not stop the server
-    if (!running || !Settings.restartOnUncaughtException) {
+    if (!running || !Settings.killProcessOnUncaughtException) {
+        logger.info("Exception handled.  NOT killing process");
         return;
     }
 
@@ -83,9 +85,9 @@ function gracefulShutdown () {
     webserver.stop();
 
     var killtimer = setTimeout(function () {
-        logger.info('Kill state waited ' + Settings.restartTimeout + ' ms. Exiting the process.');
+        logger.info('Kill state waited ' + Settings.killTimeout + ' ms. Exiting the process.');
         process.exit(0);
-    }, Settings.restartTimeout);
+    }, Settings.killTimeout);
     killtimer.unref();
 
     running = false;
