@@ -1,6 +1,7 @@
 'use strict';
 
 var Settings = require('../config/settings');
+var Constants = require('../config/constants');
 var _ = require('lodash');
 var Logger = require('../logging/logger').getLogger("Middleware");
 
