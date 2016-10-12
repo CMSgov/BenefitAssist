@@ -1,7 +1,6 @@
 'use strict';
 
 var Settings = require('../config/settings');
-var Constants = require('../config/constants');
 var _ = require('lodash');
 var Logger = require('../logging/logger').getLogger("Middleware");
 
@@ -17,8 +16,8 @@ module.exports = function (req, resp, next) {
 
     // get the authorization header
     var auth = req.headers.authorization;
-    if (_.has(Constants.apiKeys, auth)) {
-        Logger.info("Authorization allowed for user: " + Constants.apiKeys[auth] + ', for route: ' + req.url);
+    if (_.has(Settings.apiKeys, auth)) {
+        Logger.info("Authorization allowed for user: " + Settings.apiKeys[auth] + ', for route: ' + req.url);
         next();
     }
     else {
