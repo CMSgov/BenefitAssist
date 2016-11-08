@@ -10,7 +10,8 @@
     },
     "repository": "https://github.com/CMSgov/BenefitAssist.git",
     "author": "Greg Miller",
-    "license": "BSD",
+    "email" : "greg@spuriousg.com",
+    "license" : "BSD-3-Clause",
     "dependencies": {
         "restify": "~2.7.0",
         "request": "~2.63.0",
