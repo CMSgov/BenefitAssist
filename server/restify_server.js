@@ -29,7 +29,7 @@ class RestifyServer {
 
         const cors = corsMiddleware({
             preflightMaxAge: 5, //Optional
-            origins: Settings.server.origins,
+            origins: Settings.server.allowOrigins,
             // setup CORS to allow versioning
             allowHeaders: ['accept-version', 'authorization', 'x-requested-with','accept'],
         })

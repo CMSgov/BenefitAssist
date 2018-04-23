@@ -1,5 +1,4 @@
 {
-    "CORSOrigins": ["*"],
     "server": {
         "host": "local.ba.intuit.com",
         "allowOrigins": "*"
