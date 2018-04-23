@@ -1,7 +1,7 @@
 {
     "server": {
         "host": "local.ba.intuit.com",
-        "allowOrigins": "*"
+        "allowOrigins": ["*"]
     },
     "envType": "development",
     "restartOnUncaughtException": true,
