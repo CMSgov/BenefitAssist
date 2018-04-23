@@ -1,7 +1,8 @@
 {
+    "CORSOrigins": ["*"],
     "server": {
         "host": "local.ba.intuit.com",
-        "allowOrigin": "*"
+        "allowOrigins": "*"
     },
     "envType": "development",
     "restartOnUncaughtException": true,
