@@ -1,4 +1,8 @@
 {
+    "server": {
+        "host": "server.host.here",
+        "allowOrigins": ["set this to trusted CORS sources. it should NOT be * in production"] 
+    },
     "restartOnUncaughtException": true,
     "restartTimeout": 30000,
     "envType": "production",
